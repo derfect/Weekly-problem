@@ -1,0 +1,12 @@
+def function(x,lis):
+    i = 0
+    lis1 = lis
+    lis.sort()
+    for y in lis1:
+        if x >= y:
+            x -= y
+            i += 1
+        else:
+            break
+    return i
+
